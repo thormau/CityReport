@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.cityreport.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio">
+        <action
+            android:id="@+id/action_inicioFragment_to_listaIncidenciasFragment"
+            app:destination="@id/listaIncidenciasFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaIncidenciasFragment"
+        android:name="com.example.cityreport.ListaIncidenciasFragment"
+        android:label="Lista de Incidencias"
+        tools:layout="@layout/fragment_lista_incidencias" />
+
+</navigation>
